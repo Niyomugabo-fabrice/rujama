@@ -30,12 +30,12 @@ export default function Header() {
           </button>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className="text-white hover:text-black transition-colors font-bold"
+                className="text-white hover:text-black transition-colors font-bold text-xl"
                 style={{ fontFamily: 'Pacifico, cursive' }}
               >
                 {link}
@@ -53,7 +53,7 @@ export default function Header() {
                 key={link}
                 href={`#${link.toLowerCase()}`}
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-3 text-white hover:text-red-500 transition-colors font-bold border-b border-white/10"
+                className="block py-4 text-white hover:text-red-500 transition-colors font-bold text-2xl border-b border-white/10"
                 style={{ fontFamily: 'Pacifico, cursive' }}
               >
                 {link}
